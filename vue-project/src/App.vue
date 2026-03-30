@@ -21,7 +21,7 @@ import { ref } from 'vue'
   </div>
 
   <h2>Work Experience</h2>
-  <h3>Bosch Global Software Technologies <br />
+  <h3>Bosch Global Software Technologies, Coimbatore, IN<br />
       2012 - present</h3>
 
   <!-- Experience table -->
@@ -89,10 +89,29 @@ import { ref } from 'vue'
       </tbody>
   </table>
 
+  <h2>Onsite support</h2>
+  <h3>Bosch Engineering GmbH, Abstatt, DE</h3>
 
+  <p>
+    On-site travels to Germany to support the running, <br />
+    <br />
+    Jaguar Land Rover projects <br />
+    - 2015 (May to October) <br />
+    <br />
+    General Motors projects <br />
+    - 2016 (October) <br />
+    - 2017 (September to December) <br />
+    - 2018 (June to July) <br />
+    - 2019 (January to February) <br />
+    - 2019 (June to December) <br />
+    - 2022 (October) <br />
+    <br />
+    Maybach projects <br />
+    - 2024 (October to November) <br />
+  </p>
 
+</template>
 
-  </template>
 <style scoped>
 
 /* To have all the font in MAC format */
