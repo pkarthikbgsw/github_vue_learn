@@ -19,7 +19,12 @@ import { ref } from 'vue'
 
   <div class="header_row">
       <!-- DP Image -->
-      <img class="dp_image" src="/pk_10.jpg" alt="DP" />
+      <picture>
+        <source srcset="/pk_10.webp" type="image/webp" />
+        <img class="dp_image" src="/pk_10_sm.jpg" alt="DP"
+             width="150" height="150"
+             fetchpriority="high" decoding="async" />
+      </picture>
 
       <!-- Paragraph -->
       <p class="header_bio">
