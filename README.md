@@ -1,4 +1,4 @@
-# github_vue_learn
+# Resume
 Learn Vue hosted in GitHub
 
 Do the following,
