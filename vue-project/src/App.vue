@@ -22,6 +22,11 @@ import { ref } from 'vue'
 </template>
 
 <style scoped>
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .header_row {
   display: flex;
   justify-content: space-between;
