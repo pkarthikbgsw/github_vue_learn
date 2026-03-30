@@ -22,6 +22,13 @@ import { ref } from 'vue'
 </template>
 
 <style scoped>
+
+/* To have all the font in MAC format */
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Header styles */
 h1 {
   text-align: center;
   margin-bottom: 2rem;
