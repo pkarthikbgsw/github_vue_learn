@@ -35,6 +35,11 @@ const prevSlide = () => {
 //-----------------------------------Template--------------------------------------------------------
 //---------------------------------------------------------------------------------------------------
 <template>
+  <!-- Banner -->
+  <div class="banner">
+    <img class="banner-image" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1600&auto=format&fit=crop" alt="Banner" />
+  </div>
+
   <!-- Header -->
   <h1>Karthik.P Resume</h1>
 
@@ -178,6 +183,19 @@ const prevSlide = () => {
 /* To have all the font in MAC format */
 * {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.banner-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
 /* Header styles */
