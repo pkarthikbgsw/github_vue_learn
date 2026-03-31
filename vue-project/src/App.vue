@@ -38,6 +38,13 @@ const prevSlide = () => {
   <!-- Banner -->
   <div class="banner">
     <img class="banner-image" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1600&auto=format&fit=crop" alt="Banner" />
+    <!-- DP Image overlaid on banner -->
+    <picture>
+      <source srcset="/pk_10.webp" type="image/webp" />
+      <img class="dp_image" src="/pk_10_sm.jpg" alt="DP"
+           width="150" height="150"
+           fetchpriority="high" decoding="async" />
+    </picture>
   </div>
 
   <!-- Header -->
@@ -54,14 +61,6 @@ const prevSlide = () => {
   </div>
 
   <div class="header_row">
-      <!-- DP Image -->
-      <picture>
-        <source srcset="/pk_10.webp" type="image/webp" />
-        <img class="dp_image" src="/pk_10_sm.jpg" alt="DP"
-             width="150" height="150"
-             fetchpriority="high" decoding="async" />
-      </picture>
-
       <!-- Paragraph -->
       <p class="header_bio">
         Specialist in, <br />
@@ -188,7 +187,8 @@ const prevSlide = () => {
 /* Banner */
 .banner {
   width: 100%;
-  margin-bottom: 1.5rem;
+  position: relative;
+  margin-bottom: 90px;
 }
 
 .banner-image {
@@ -240,13 +240,15 @@ h1 {
 }
 
 .dp_image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  flex-shrink: 0; /* prevents image from being squished */
+  border: 4px solid #fff;
+  object-fit: cover;
 }
 
 /* Table styles */
